@@ -185,36 +185,10 @@
               clip-rule="evenodd" />
           </svg>
         </label>
-        <!-- chatbots -->
-        <details class="dropdown">
-          <summary class="btn m-1 bg-gray-200 text-gray-900">Select Models</summary>
-          <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-            <div class="form-control">
-              <label class="label cursor-pointer justify-normal gap-2">
-                <input type="checkbox" checked="checked" class="checkbox" />
-                <span class="label-text">chatGPT</span>
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="label cursor-pointer justify-normal gap-2">
-                <input type="checkbox" checked="checked" class="checkbox" />
-                <span class="label-text">gemini</span>
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="label cursor-pointer justify-normal gap-2">
-                <input type="checkbox" checked="checked" class="checkbox" />
-                <span class="label-text">claude</span>
-              </label>
-            </div>
-            <div class="form-control">
-              <label class="label cursor-pointer justify-normal gap-2">
-                <input type="checkbox" checked="checked" class="checkbox" />
-                <span class="label-text">perplexity</span>
-              </label>
-            </div>
-          </ul>
-        </details>
+        <div class="">
+          <button class="btn">
+            <svg class="w-6 h-6 fill-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M450-450H220v-60h230v-230h60v230h230v60H510v230h-60v-230Z"/></svg> New Chat</button>
+        </div>
       </div>
 
       <!-- prompt -->
@@ -499,9 +473,9 @@
         </div>
 
         <!-- prompt textarea -->
-        <div class="w-[700px] fixed bottom-0 left-1/2 -translate-x-1/2 bg-gray-100 rounded-full px-2 flex items-center">
-          <textarea placeholder=""
-            class="textarea textarea-xs w-full resize-none bg-transparent text-gray-900 text-base focus:outline-none focus:border-none"></textarea>
+        <div class="w-[700px] fixed bottom-2 left-1/2 -translate-x-1/2 bg-gray-200 rounded-full p-2 flex items-center">
+          <textarea placeholder="Enter Your Prompt here"
+            class="text-left w-full resize-none bg-transparent text-gray-900 text-base h-5 px-5 focus:outline-none focus:border-none"></textarea>
           <button class="btn btn-circle bg-gray-950 hover:bg-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-5 fill-white">
               <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
